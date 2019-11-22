@@ -44,7 +44,7 @@ class Date
         year = Convert.ToInt32(YYMMDD[0]);
         month = Convert.ToInt32(YYMMDD[1]);
     }
-    public void SearchToDay(int SearchYear, int SearchMonth, int SearchDay)
+    public void SearchToDay(int SearchYear, int SearchMonth)
     {
         //날짜 검색 이전 모든 내역 초기화
         CalendarReset();

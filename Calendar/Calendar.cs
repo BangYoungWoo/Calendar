@@ -17,7 +17,7 @@ namespace WindowsFormsApp1
         public Calendar()
         {
                 InitializeComponent();
-                date.SearchToDay(date.year,date.month,date.day);
+                date.SearchToDay(date.year,date.month);
                 Date_Text_Write();
         }
         void Date_Text_Write()
@@ -75,7 +75,7 @@ namespace WindowsFormsApp1
         {
             date.month -= 1;
             date.MonthControl();
-            date.SearchToDay(date.year, date.month, date.day);
+            date.SearchToDay(date.year, date.month);
             Date_Text_Write();
         }
 
@@ -83,7 +83,7 @@ namespace WindowsFormsApp1
         {
             date.month +=1;
             date.MonthControl();
-            date.SearchToDay(date.year, date.month, date.day);
+            date.SearchToDay(date.year, date.month);
 
             Date_Text_Write();
 
@@ -170,7 +170,7 @@ namespace WindowsFormsApp1
                 date.tenStemTrace = false;
             else if (date.tenStemTrace == false)
                 date.tenStemTrace = true;
-            date.SearchToDay(date.year, date.month, date.day);
+            date.SearchToDay(date.year, date.month);
             Date_Text_Write();
         }
 
@@ -180,7 +180,7 @@ namespace WindowsFormsApp1
                 date.zodiacTrance = false;
             else if (date.zodiacTrance == false)
                 date.zodiacTrance = true;
-            date.SearchToDay(date.year, date.month, date.day);
+            date.SearchToDay(date.year, date.month);
             Date_Text_Write();
         }
 
@@ -190,7 +190,7 @@ namespace WindowsFormsApp1
                 date.year -= 10;
             else if(date.year - 10 < 1919)
                 date.year =1919;
-            date.SearchToDay(date.year, date.month, date.day);
+            date.SearchToDay(date.year, date.month);
             Date_Text_Write();
         }
 
@@ -200,7 +200,7 @@ namespace WindowsFormsApp1
                 date.year += 10;
             else if (date.year + 10 > 2119)
                 date.year = 2119;
-            date.SearchToDay(date.year, date.month, date.day);
+            date.SearchToDay(date.year, date.month);
             Date_Text_Write();
         }
 
@@ -228,7 +228,7 @@ namespace WindowsFormsApp1
         {
             if (date.year >= 1920)
                 date.year -= 1;
-            date.SearchToDay(date.year, date.month, date.day);
+            date.SearchToDay(date.year, date.month);
             Date_Text_Write();
         }
 
@@ -236,7 +236,7 @@ namespace WindowsFormsApp1
         {
             if(date.year<=2118)
             date.year += 1;
-            date.SearchToDay(date.year, date.month, date.day);
+            date.SearchToDay(date.year, date.month);
             Date_Text_Write();
         }
     }
