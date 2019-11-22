@@ -9,11 +9,11 @@ class Date
     //10간
     int tenStems;
     public string RealTenStem;
-    public bool tenStemTrace;
+    public bool tenStemExchange;
     //12지
     int zodiac;
     public string RealZodiac;
-    public bool zodiacTrance;
+    public bool zodiacExchange;
     //현재 날짜까지 계산할 날짜
     int startYear;
     int startMonth;
@@ -101,8 +101,8 @@ class Date
         //10간, 12지 문자 입력
         CharWrite();
         //판별값 조건에 따라 10간, 12지를 한글 or 한자 출력
-        TenStemTrance();
-        ZodiacTrance(); 
+        TenStemExchange();
+        ZodiacExchange(); 
     }
     //이름값
     public void CalendarReset()
@@ -297,9 +297,9 @@ class Date
                 break;
         }
     }
-    public void TenStemTrance()
+    public void TenStemExchange()
     {
-        if (tenStemTrace == true)
+        if (tenStemExchange == true)
             switch (RealTenStem)
             {
                 case "甲":
@@ -333,7 +333,7 @@ class Date
                     RealTenStem = "계";
                     break;
             }
-        else if (tenStemTrace == false)
+        else if (tenStemExchange == false)
             switch (RealTenStem)
             {
                 case "갑":
@@ -369,9 +369,9 @@ class Date
             }
 
     }
-    public void ZodiacTrance()
+    public void ZodiacExchange()
     {
-        if (zodiacTrance == true)
+        if (zodiacExchange == true)
             switch (RealZodiac)
             {
                 case "子":
@@ -411,7 +411,7 @@ class Date
                     RealZodiac = "해";
                     break;
             }
-        else if (zodiacTrance == false)
+        else if (zodiacExchange == false)
             switch (RealZodiac)
             {
                 case "자":

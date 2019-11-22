@@ -166,20 +166,20 @@ namespace WindowsFormsApp1
 
         private void button47_Click(object sender, EventArgs e)
         {
-            if (date.tenStemTrace == true)
-                date.tenStemTrace = false;
-            else if (date.tenStemTrace == false)
-                date.tenStemTrace = true;
+            if (date.tenStemExchange == true)
+                date.tenStemExchange = false;
+            else if (date.tenStemExchange == false)
+                date.tenStemExchange = true;
             date.SearchToDay(date.year, date.month);
             Date_Text_Write();
         }
 
         private void button48_Click(object sender, EventArgs e)
         {
-            if (date.zodiacTrance == true)
-                date.zodiacTrance = false;
-            else if (date.zodiacTrance == false)
-                date.zodiacTrance = true;
+            if (date.zodiacExchange == true)
+                date.zodiacExchange = false;
+            else if (date.zodiacExchange == false)
+                date.zodiacExchange = true;
             date.SearchToDay(date.year, date.month);
             Date_Text_Write();
         }
